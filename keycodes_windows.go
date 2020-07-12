@@ -13,17 +13,17 @@ var (
 
 	// KeyPrev is the default key to go up during selection inside a command line prompt.
 	KeyPrev        rune = 38
-	KeyPrevDisplay      = "k"
+	KeyPrevDisplay      = "w"
 
 	// KeyNext is the default key to go down during selection inside a command line prompt.
 	KeyNext        rune = 40
-	KeyNextDisplay      = "j"
+	KeyNextDisplay      = "s"
 
 	// KeyBackward is the default key to page up during selection inside a command line prompt.
 	KeyBackward        rune = 37
-	KeyBackwardDisplay      = "h"
+	KeyBackwardDisplay      = "a"
 
 	// KeyForward is the default key to page down during selection inside a command line prompt.
 	KeyForward        rune = 39
-	KeyForwardDisplay      = "l"
+	KeyForwardDisplay      = "d"
 )

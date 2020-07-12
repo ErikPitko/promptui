@@ -257,9 +257,9 @@ func (s *Select) innerRun(cursorPos, scroll int, top rune) (int, string, error) 
 		switch {
 		case key == KeyEnter:
 			return nil, 0, true
-		case key == s.Keys.Next.Code || (key == 'j' && !searchMode):
+		case key == s.Keys.Next.Code || (key == 's' && !searchMode):
 			s.list.Next()
-		case key == s.Keys.Prev.Code || (key == 'k' && !searchMode):
+		case key == s.Keys.Prev.Code || (key == 'w' && !searchMode):
 			s.list.Prev()
 		case key == s.Keys.Search.Code:
 			if !canSearch {
@@ -284,9 +284,9 @@ func (s *Select) innerRun(cursorPos, scroll int, top rune) (int, string, error) 
 			} else {
 				s.list.CancelSearch()
 			}
-		case key == s.Keys.PageUp.Code || (key == 'h' && !searchMode):
+		case key == s.Keys.PageUp.Code || (key == 'a' && !searchMode):
 			s.list.PageUp()
-		case key == s.Keys.PageDown.Code || (key == 'l' && !searchMode):
+		case key == s.Keys.PageDown.Code || (key == 'd' && !searchMode):
 			s.list.PageDown()
 		default:
 			if canSearch && searchMode {
